@@ -58,7 +58,7 @@ Bytt til den nye branchen ved å kjøre følgende kommando i terminalen:
 git switch nu_klinger
 ```
 
-Nå kan Person 2 åpne filen nu_klinger.txt og lime inn refrenget (vist under) i bunn av filen.
+Nå kan Person 2 åpne filen nu-klinger.txt og lime inn refrenget (vist under) i bunn av filen.
 
 > Studenter i den gamle stad, ta vare på byens ry! (klapp x2)
 > Husk på at jenter, øl og dram var kjempenes meny.
@@ -69,10 +69,10 @@ Nå kan Person 2 åpne filen nu_klinger.txt og lime inn refrenget (vist under) i
 Lagre filen og lukk den.
 
 Nå er vi klare til å sende denne endringen til GitHub!
-Kjør følgende kommando i terminalen:
+Kjør følgende kommandoer i terminalen:
 
 ```
-git add nu_klinger.txt
+git add nu-klinger.txt
 ```
 
 ```
@@ -90,8 +90,47 @@ Bytt tilbake til master-branchen ved å kjøre følgende kommando i terminalen:
 git switch master
 ```
 
-Merge inn nu_linker-branchen ved å kjøre følgende kommando i terminalen:
+Merge nu_linker-branchen inn i master ved å kjøre følgende kommando i terminalen:
 
 ```
 git merge nu_klinger
+```
+
+Nå er nu klinger ferdig for denne gang og det er Person 1 sin tur til å gjøre ferdig ja vi elsker!
+
+## Oppgave 4
+
+**Person 1:**
+
+Lag en ny branch som heter `nasjonalsang` ved å kjøre følgende kommando i terminalen:
+
+```
+git branch nasjonalsang
+```
+
+Bytt til den nye branchen ved å kjøre følgende kommando i terminalen:
+
+```
+git switch nasjonalsang
+```
+
+Åpne filen ja-vi-elsker.txt og lim inn verset (vist under) i bunn av filen.
+
+> Elsker, elsker det og tenker på vår far og mor og den saganatt som senker drømme på vår jord.
+
+Lagre filen og lukk den.
+
+Nå er vi klare til å sende denne endringen til GitHub!
+Kjør følgende kommandoer i terminalen:
+
+```
+git add ja-vi-elsker.txt
+```
+
+```
+git commit -m "videreutviklet Ja, vi elsker dette landet"
+```
+
+```
+git push --set-upstream origin nasjonalsang
 ```
