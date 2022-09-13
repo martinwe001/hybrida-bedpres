@@ -1,30 +1,39 @@
 # Git Workshop
 
-Dette er en react web-app dere skal gjøre endringer på :) Appen kan kjøres lokalt ved å navigere til prosjekt rot-mappen og kjøre `npm start`. Dette forutsetter at [Node](https://nodejs.org/en/download/) er installert. Sjekk om node er installert ved å kjøre:
+Dette repoet inneholder tre velkjente sanger, hver lagret i sin txt-fil. Dere skal nå sammarbeide to og to for å fullføre sangene i utvikler-fashion :)
 
-```
-node -v
-```
-
-Hvis dette returnerer noe som likner dette `v16.17.0` er node installert. Hvis ikke, klikk [her](https://nodejs.org/en/download/) for å installere.
-
-Gå sammen to og to og start på oppgavene under.
+Gå sammen to og to og start på oppgavene under. Gjør gjerne oppgavene sammen, selv om de refereres til hver av dere.
 
 ## Oppgave 1
 
-Person 1:
+**Person 1:**
 
 - Sjekk at du er logget inn i GitHub og trykk på `fork` øverst i høyre hjørne.
-- Skriv inn et navn for repoet, for eksempel `hybrida-bedpres`
+- På siden som kommer opp, skriv inn et navn for repoet, for eksempel `hybrida-bedpres`
 - Trykk på `Create fork`
 
-Nå har person 1 laget en kopi av repoet i sin GitHub.
+Nå har person 1 laget en kopi/fork av repoet i sin GitHub. Neste steg er at Person 1 gir sin kjære samarbeidspartner tilgang til repoet. Dette gjøres ved å:
+
+- Gå til `Settings` i menyen i repoet på GitHub
+- Trykk på `Collaborators`
+- Under `Manage Access`, trykk på `Add People`
+- Skriv inn brukernavnet på Person 2 og trykk `Add to this repository`
+
+Nå er alt klart for at dere kan bruke Git til effektivt samarbeid.
 
 ## Oppgave 2
 
-Person 1 og Person 2:
-- Clone repoet lokalt på hver deres maksin:
+**Både Person 1 og Person 2:**
+
+- Åpne terminalen på hver deres maskin og naviger til Desktop.
+- Clone repoet lokalt på hver deres maksin ved å kjøre følgende kommando i terminalen (bytt ut <person_1_username> med GitHub-brukernavnet til Person 1 og <repo_name> med navnet på repoet dere velgte i Oppgave 1):
+
 ```
-git clone 
+git clone https://github.com/<person_1_username>/<repo_name>.git
 ```
 
+## Oppgave 3
+
+Når flere samarbeider på et prosjekt med Git er det vanlig å lage hver sine `brancher` hvor man gjør endringer på en kopi av koden.
+
+**Person 2:**
