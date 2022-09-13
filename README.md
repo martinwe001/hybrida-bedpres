@@ -57,3 +57,41 @@ Bytt til den nye branchen ved å kjøre følgende kommando i terminalen:
 ```
 git switch nu_klinger
 ```
+
+Nå kan Person 2 åpne filen nu_klinger.txt og lime inn refrenget (vist under) i bunn av filen.
+
+> Studenter i den gamle stad, ta vare på byens ry! (klapp x2)
+> Husk på at jenter, øl og dram var kjempenes meny.
+> Og faller I alle mann alle, skal det gjalle fra alle mot sky.
+> La'kke byen få ro, men la den få merke den er en studenterby.
+> Og øl og dram, og øl og dram, og øl og dram, og øl og dram.
+
+Lagre filen og lukk den.
+
+Nå er vi klare til å sende denne endringen til GitHub!
+Kjør følgende kommando i terminalen:
+
+```
+git add nu_klinger.txt
+```
+
+```
+git commit -m "la inn refrenget på nu klinger"
+```
+
+```
+git push
+```
+
+Flott, endringene er pushet til branchen `nu_klinger`! La oss merge `nu_klinger` med `master`.
+Bytt tilbake til master-branchen ved å kjøre følgende kommando i terminalen:
+
+```
+git switch master
+```
+
+Merge inn nu_linker-branchen ved å kjøre følgende kommando i terminalen:
+
+```
+git merge nu_klinger
+```
