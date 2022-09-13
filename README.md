@@ -169,3 +169,5 @@ git push
 ## Oppgave 5 - Merge Conflicts
 
 En kjent utfordring når man samarbeider i team er merge conflicts. Disse oppstår gjerne når flere personer har gjort endringer i samme fil. Da vet ikke Git hvilke endringer som skal inkluderes, og man får en merge conflict.
+
+Nå skal vi simulere en merge conflict ved at Person 1 og Person 2 skal legge til en ny linje i `dans_paa_bordet.txt`. Før dere starter, pass på at begge står i master-branchen og at dere har pullet de siste endringene.
