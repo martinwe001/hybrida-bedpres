@@ -170,9 +170,9 @@ git push
 
 En kjent utfordring når man samarbeider i team er merge conflicts. Disse oppstår gjerne når flere personer har gjort endringer i samme fil. Da vet ikke Git hvilke endringer som skal inkluderes, og man får en merge conflict.
 
-Nå skal vi simulere en merge conflict ved at Person 1 og Person 2 skal legge til en ny linje i `dans_paa_bordet.txt` i hver sin branch, for så å merge disse inn i master-branchen. Før dere starter, pass på at begge står i master-branchen og at dere har pullet de siste endringene.
+Nå skal vi simulere en merge conflict ved at Person 1 og Person 2 skal legge til en ny linje i `dans-paa-bordet.txt` i hver sin branch, for så å merge disse inn i master-branchen. Før dere starter, pass på at begge står i master-branchen og at dere har pullet de siste endringene.
 
-Først kan Person 1 legge til en ny linje i dans-paa-bordet.txt i en ny branch kalt `person_1_branch`:
+Først kan Person 1 legge til en ny linje i `dans-paa-bordet.txt` i en ny branch kalt `person_1_branch`:
 
 ```
 git branch person_1_branch
@@ -182,7 +182,7 @@ git branch person_1_branch
 git switch person_1_branch
 ```
 
-Legg til følgende tekst i dans_paa_bordet.txt (eller hva du vil):
+Legg til følgende tekst i dans-paa-bordet.txt (eller hva du vil):
 
 > Je'kke fransk men hun liker min kissing
 
@@ -190,11 +190,11 @@ Lagre og lukk filen.
 Push endringene til GitHub:
 
 ```
-git add dans_paa_bordet.txt
+git add dans-paa-bordet.txt
 ```
 
 ```
-git commit -m "Person 1 endrer dans_paa_bordet.txt"
+git commit -m "Person 1 endrer dans-paa-bordet.txt"
 ```
 
 ```
@@ -207,11 +207,11 @@ Bytt tilbake til master-branchen:
 git switch master
 ```
 
-Nå kan Person 2 gjøre det samme, men i en ny branch kalt person_2_branch, og legg inn en annen tekst i `dans_paa_bordet.txt`. For eksempel teksten under:
+Nå kan Person 2 gjøre det samme, men i en ny branch kalt person_2_branch, og legg inn en annen tekst i `dans-paa-bordet.txt`. For eksempel teksten under:
 
 > Hun e'kke en engel men hun er en blessing
 
-Nå har altså de to branchene person_1_branch og person_2_branch ulik tekst på linje 6 i filen `dans_paa_bordet.txt`. Hva skjer når vi nå skal merge dette inn i master?
+Nå har altså de to branchene person_1_branch og person_2_branch ulik tekst på linje 6 i filen `dans-paa-bordet.txt`. Hva skjer når vi nå skal merge dette inn i master?
 
 Nå kan Person 1 pulle de siste endringene mens man står i master-branchen:
 
@@ -233,7 +233,7 @@ git merge person_2_branch
 
 Aiaiai, merge conflict! Hvordan fikser vi dette?
 
-Åpne filen dans_paa_bordet.txt i en valgfri tekst-editor (for eksempel Visual Studio Code, Pycharm, TextEdit eller Notepad). Her ser vi at git har skrevet inn noe rart i filen. Her må dere bestemme hvilken av linjene som skal taes med, og slette den andre (med de tilhørende rare linjene). Etter dette burde filen se ut som dette hvis dere valgte å beholde endringene fra `person_2_branch`:
+Åpne filen ddans-paa-bordet.txt i en valgfri tekst-editor (for eksempel Visual Studio Code, Pycharm, TextEdit eller Notepad). Her ser vi at git har skrevet inn noe rart i filen. Her må dere bestemme hvilken av linjene som skal taes med, og slette den andre (med de tilhørende rare linjene). Etter dette burde filen se ut som dette hvis dere valgte å beholde endringene fra `person_2_branch`:
 
 > Mi amor, danser for seg selv
 >
@@ -250,7 +250,7 @@ Aiaiai, merge conflict! Hvordan fikser vi dette?
 Nice, nå kan vi pushe dette til master:
 
 ```
-git add git add dans_paa_bordet.txt
+git add git add dans-paa-bordet.txt
 ```
 
 ```
