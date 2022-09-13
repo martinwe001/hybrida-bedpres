@@ -80,7 +80,7 @@ git commit -m "la inn refrenget på nu klinger"
 ```
 
 ```
-git push
+git push --set-upstream origin nu_klinger
 ```
 
 Flott, endringene er pushet til branchen `nu_klinger`! La oss merge `nu_klinger` med `master`.
@@ -95,5 +95,3 @@ Merge inn nu_linker-branchen ved å kjøre følgende kommando i terminalen:
 ```
 git merge nu_klinger
 ```
-
-text added from new branch
