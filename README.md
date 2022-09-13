@@ -96,6 +96,12 @@ Merge nu_linker-branchen inn i master ved å kjøre følgende kommando i termina
 git merge nu_klinger
 ```
 
+Og tilslutt, push til GitHub:
+
+```
+git push
+```
+
 Nå er nu klinger ferdig for denne gang og det er Person 1 sin tur til å gjøre ferdig ja vi elsker!
 
 ## Oppgave 4
@@ -134,3 +140,23 @@ git commit -m "videreutviklet Ja, vi elsker dette landet"
 ```
 git push --set-upstream origin nasjonalsang
 ```
+
+Nå kan endringene merges inn i master. Bytt til master-branchen:
+
+```
+git checkout master
+```
+
+Merge endringene inn i master:
+
+```
+git merge nasjonalsang
+```
+
+Og push endringene til GitHub:
+
+```
+git push
+```
+
+## Oppgave 5
