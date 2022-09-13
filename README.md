@@ -2,9 +2,9 @@
 
 Dette repoet inneholder tre velkjente sanger, hver lagret i sin txt-fil. Dere skal nå sammarbeide to og to for å fullføre sangene i utvikler-fashion :)
 
-Gå sammen to og to og start på oppgavene under. Gjør gjerne oppgavene sammen, selv om de refereres til hver av dere.
+Gå sammen to og to og start på oppgavene under. Gjør gjerne oppgavene sammen, selv om de refereres til hver av dere. Og ikke nøl med å spørre om hjelp hvis dere står fast!
 
-## Oppgave 1
+## Oppgave 1 - Kopier GitHub repositoriet
 
 **Person 1:**
 
@@ -21,7 +21,7 @@ Nå har person 1 laget en kopi/fork av repoet i sin GitHub. Neste steg er at Per
 
 Nå er alt klart for at dere kan bruke Git til effektivt samarbeid.
 
-## Oppgave 2
+## Oppgave 2 - Clone repositoret lokalt
 
 **Både Person 1 og Person 2:**
 
@@ -32,7 +32,7 @@ Nå er alt klart for at dere kan bruke Git til effektivt samarbeid.
 git clone https://github.com/<person_1_username>/<repo_name>.git
 ```
 
-## Oppgave 3
+## Oppgave 3 - Branching
 
 Når flere samarbeider på et prosjekt med Git er det vanlig å lage hver sin `branch` hvor man gjør endringer på en kopi av koden. Dette som en trygghet på at man kan gjøre feil uten at det påvirker andre på prosjektet.
 
@@ -104,9 +104,16 @@ git push
 
 Nå er nu klinger ferdig for denne gang og det er Person 1 sin tur til å gjøre ferdig ja vi elsker!
 
-## Oppgave 4
+## Oppgave 4 - Branching
 
 **Person 1:**
+Pass på at du står i master-branchen og pull endringene fra din samarbeidspartner ved å kjøre følgende kommando i terminalen:
+
+```
+git pull
+```
+
+Sjekk at nu_klinger.txt har blitt endret.
 
 Lag en ny branch som heter `nasjonalsang` ved å kjøre følgende kommando i terminalen:
 
@@ -159,4 +166,6 @@ Og push endringene til GitHub:
 git push
 ```
 
-## Oppgave 5
+## Oppgave 5 - Merge Conflicts
+
+En kjent utfordring når man samarbeider i team er merge conflicts. Disse oppstår gjerne når flere personer har gjort endringer i samme fil. Da vet ikke Git hvilke endringer som skal inkluderes, og man får en merge conflict.
