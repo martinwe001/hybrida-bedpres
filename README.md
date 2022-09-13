@@ -4,7 +4,7 @@ Dette repoet inneholder tre velkjente sanger, hver lagret i sin txt-fil. Dere sk
 
 Gå sammen to og to og start på oppgavene under. Gjør gjerne oppgavene sammen, selv om de refereres til hver av dere. Og ikke nøl med å spørre om hjelp hvis dere står fast!
 
-## Oppgave 1 - Kopier GitHub repositoriet
+## Oppgave 1 - Kopier (fork) GitHub repositoriet
 
 **Person 1:**
 
