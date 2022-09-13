@@ -95,3 +95,5 @@ Merge inn nu_linker-branchen ved å kjøre følgende kommando i terminalen:
 ```
 git merge nu_klinger
 ```
+
+text added from new branch
