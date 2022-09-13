@@ -34,6 +34,26 @@ git clone https://github.com/<person_1_username>/<repo_name>.git
 
 ## Oppgave 3
 
-Når flere samarbeider på et prosjekt med Git er det vanlig å lage hver sine `brancher` hvor man gjør endringer på en kopi av koden.
+Når flere samarbeider på et prosjekt med Git er det vanlig å lage hver sin `branch` hvor man gjør endringer på en kopi av koden. Dette som en trygghet på at man kan gjøre feil uten at det påvirker andre på prosjektet.
+
+Dere skal nå lage hver deres branch og fullføre sangtekstene nu klinger og ja vi elsker. For å sjekke hvilke branches som finnes kjør følgende kommando i terminalen:
+
+```
+git branch
+```
+
+Skriv `q` for å gå ut at branch-visningen.
 
 **Person 2:**
+
+Person 2 skal endre nu_klinger.txt, men først må det lages en ny branch hvor endringene kan gjøres. Lag en ny branch kalt `nu_klinger` ved å kjøre følgende kommando i terminalen:
+
+```
+git branch nu_klinger
+```
+
+Bytt til den nye branchen ved å kjøre følgende kommando i terminalen:
+
+```
+git switch nu_klinger
+```
